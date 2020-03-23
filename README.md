@@ -4,7 +4,7 @@
 * cat-or-dog: 画像分類実践用
 * movie: 動画素材
 * opencv: Opencv実践用
-* python: PythonO用
+* python: Python実践用
 
 ## 環境構築(mac os版)
 
