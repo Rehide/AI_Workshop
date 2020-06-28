@@ -4,8 +4,8 @@
 import cv2
 
 # Haar Cascadeの識別器を読み込み
-face_cascade = cv2.CascadeClassifier('/anaconda3/lib/python3.7/site-packages/cv2/data/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('/anaconda3/lib/python3.7/site-packages/cv2/data/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 # 画像の読み込み
 img = cv2.imread('image/Lenna.png')
@@ -13,7 +13,7 @@ img = cv2.imread('image/Lenna.png')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # 識別器を用いてグレースケール化された画像から顔を検出する
-faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+faces = face_cascade.detectMultiScale(gray,1.3,5)
 
 # バウンディングボックス（顔）の描画
 for (x,y,w,h) in faces:
