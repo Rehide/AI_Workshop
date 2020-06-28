@@ -2,6 +2,7 @@
 
 ## フォルダ説明
 * cat-or-dog: 画像分類実践用
+* detection: 物体検出実戦用
 * movie: 動画素材
 * opencv: Opencv実践用
 * python: Python実践用
